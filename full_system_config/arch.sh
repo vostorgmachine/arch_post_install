@@ -60,6 +60,7 @@ PKGS=(
 	'powerline'
 	'cmatrix'
 	'bat'
+	'exa'
 	'lolcat'
 	'figlet'
 	'neofetch'
