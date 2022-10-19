@@ -76,6 +76,8 @@ PKGS=(
 	'virtualbox'
 	'calibre'
 	'ripgrep'
+	'elisa'
+	'yt-dlp'
 )
 
 for PKG in "${PKGS[@]}"; do
@@ -127,7 +129,7 @@ echo "AUR soft installation"
 echo "=============================="
 echo
 
-yay -S zotero tty-clock 
+yay -S zotero tty-clock kwin-bismuth
 
 echo
 echo "=============================="
@@ -150,6 +152,7 @@ cp ~/.bashrc ~/.bashrc_old_bak
 cp ~/rc/.bashrc ~/.bashrc
 cp -r ~/rc/powerline/ ~/.config/.
 source ~/.bashrc
+
 echo
 echo "=============================="
 echo "All steps are done!"
