@@ -1,1 +1,0 @@
-Vostorg dotfiles
