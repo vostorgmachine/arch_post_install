@@ -75,6 +75,7 @@ PKGS=(
 	'vlc'
 	'virtualbox'
 	'calibre'
+	'ripgrep'
 )
 
 for PKG in "${PKGS[@]}"; do
