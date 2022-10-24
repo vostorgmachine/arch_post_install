@@ -80,6 +80,7 @@ PKGS=(
 	'yt-dlp'
 	'pandoc'
 	'thunderbird'
+	'catdoc'
 )
 
 for PKG in "${PKGS[@]}"; do
