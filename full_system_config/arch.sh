@@ -78,6 +78,8 @@ PKGS=(
 	'ripgrep'
 	'elisa'
 	'yt-dlp'
+	'pandoc'
+	'thunderbird'
 )
 
 for PKG in "${PKGS[@]}"; do
