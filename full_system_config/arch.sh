@@ -91,6 +91,20 @@ for PKG in "${PKGS[@]}"; do
 done
 
 # ==================================================
+echo
+echo "=============================="
+echo "ranger-zoxide plugin installation"
+echo "=============================="
+echo
+
+git clone git@github.com:jchook/ranger-zoxide.git ~/.config/ranger/plugins/zoxide
+
+echo
+echo "=============================="
+echo "Done!"
+echo "=============================="
+echo
+# ==================================================
 
 echo
 echo "=============================="
