@@ -149,7 +149,7 @@ echo
 cd ~/
 git clone https://github.com/vostorgmachine/rc/
 mkdir ~/.config/alacritty && cp ~/rc/alacritty.yml ~/.config/alacritty/
-mkdir ~/.config/nvim && cp ~/rc/init.vim ~/.config/nvim/
+cp -r ~/rc/nvim/ ~/.config/
 cp ~/rc/.tmux.conf ~/
 cp ~/.bashrc ~/.bashrc_old_bak
 cp ~/rc/.bashrc ~/.bashrc
