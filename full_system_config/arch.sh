@@ -150,7 +150,7 @@ cd ~/
 git clone https://github.com/vostorgmachine/rc/
 mkdir ~/.config/alacritty && cp ~/rc/alacritty.yml ~/.config/alacritty/
 cp -r ~/rc/nvim/ ~/.config/
-cp ~/rc/.tmux.conf ~/
+cp ~/rc/.tmux.conf ~/rc/.tmux-colorscheme.conf ~/
 cp ~/.bashrc ~/.bashrc_old_bak
 cp ~/rc/.bashrc ~/.bashrc
 cp -r ~/rc/powerline/ ~/.config/.
