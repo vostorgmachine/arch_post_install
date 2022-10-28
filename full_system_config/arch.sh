@@ -34,7 +34,7 @@ echo
 
 echo
 echo "=============================="
-echo "software installing"
+echo "packages installing"
 echo "=============================="
 echo
 
@@ -55,6 +55,7 @@ PKGS=(
 	'telegram-desktop'
 
 	# other
+	'w3m' # allow to draw pictures in ranger
 	'gdu'
 	'bashtop'
 	'powerline'
@@ -81,6 +82,7 @@ PKGS=(
 	'pandoc'
 	'thunderbird'
 	'catdoc'
+	'zoxide' # kinda folder jumper
 )
 
 for PKG in "${PKGS[@]}"; do
