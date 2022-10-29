@@ -84,6 +84,7 @@ PKGS=(
 	'catdoc'
 	'zoxide' # kinda folder jumper
 	'python-pip'
+	'lazygit'
 )
 
 for PKG in "${PKGS[@]}"; do
