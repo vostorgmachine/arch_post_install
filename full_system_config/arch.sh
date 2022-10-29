@@ -83,6 +83,7 @@ PKGS=(
 	'thunderbird'
 	'catdoc'
 	'zoxide' # kinda folder jumper
+	'python-pip'
 )
 
 for PKG in "${PKGS[@]}"; do
