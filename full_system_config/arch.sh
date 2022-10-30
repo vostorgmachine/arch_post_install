@@ -10,34 +10,14 @@
 # Vostorg here. This is my full post-installation script for
 # Arch-based distros.
 
-echo
-echo "=============================="
 echo "mononokiNF font pack installing"
-echo "=============================="
-echo
 sudo cp -r usr/ / 
-# ==================================================
-echo
-echo "neovim plugin manager installing"
-echo
 
+echo "neovim plugin manager installing"
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-echo
-echo "=============================="
-echo "Done!"
-echo "=============================="
-echo
-
-# ==================================================
-
-echo
-echo "=============================="
 echo "packages installing"
-echo "=============================="
-echo
-
 PKGS=(
 	# terminal 
 	'alacritty'
@@ -92,44 +72,17 @@ for PKG in "${PKGS[@]}"; do
     sudo pacman -S "$PKG" --noconfirm --needed
 done
 
-# ==================================================
-echo
-echo "=============================="
-echo "ranger-zoxide plugin installation"
-echo "=============================="
-echo
+echo "tmux plugin manager installing"
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+echo "ranger-zoxide plugin installing"
 git clone git@github.com:jchook/ranger-zoxide.git ~/.config/ranger/plugins/zoxide
 
-echo
-echo "=============================="
-echo "Done!"
-echo "=============================="
-echo
-# ==================================================
-
-echo
-echo "=============================="
 echo "fzf installation"
-echo "=============================="
-echo
-
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
-echo
-echo "=============================="
-echo "Done!"
-echo "=============================="
-echo
-# ==================================================
-
-echo
-echo "=============================="
 echo "AUR package manager installing"
-echo "=============================="
-echo
-
 cd /opt
 sudo git clone https://aur.archlinux.org/yay-git.git
 sudo chown -R $USER:$USER ./yay-git
@@ -137,33 +90,10 @@ cd yay-git
 makepkg -si
 cd ~/
 
-echo
-echo "=============================="
-echo "Done!"
-echo "=============================="
-echo
-# ==================================================
-
-echo
-echo "=============================="
 echo "AUR soft installation"
-echo "=============================="
-echo
-
 yay -S zotero tty-clock kwin-bismuth
 
-echo
-echo "=============================="
-echo "Done!"
-echo "=============================="
-echo
-# ==================================================
-echo
-echo "=============================="
 echo "config downloading & setting"
-echo "=============================="
-echo
-
 cd ~/
 git clone https://github.com/vostorgmachine/rc/
 mkdir ~/.config/alacritty && cp ~/rc/alacritty.yml ~/.config/alacritty/
