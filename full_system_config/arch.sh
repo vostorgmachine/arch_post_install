@@ -66,6 +66,7 @@ PKGS=(
 	'python-pip'
 	'lazygit'
 	'ipython'
+	'tree'
 )
 
 for PKG in "${PKGS[@]}"; do
