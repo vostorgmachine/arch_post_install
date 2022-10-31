@@ -65,6 +65,7 @@ PKGS=(
 	'zoxide' # kinda folder jumper
 	'python-pip'
 	'lazygit'
+	'ipython'
 )
 
 for PKG in "${PKGS[@]}"; do
