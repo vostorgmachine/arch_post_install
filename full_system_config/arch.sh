@@ -38,7 +38,6 @@ PKGS=(
 	'w3m' # allow to draw pictures in ranger
 	'gdu'
 	'bashtop'
-	'powerline'
 	'cmatrix'
 	'bat'
 	'exa'
@@ -93,7 +92,7 @@ makepkg -si
 cd ~/
 
 echo "AUR soft installation"
-yay -S zotero tty-clock kwin-bismuth
+yay -S zotero tty-clock kwin-bismuth starship
 
 echo "config downloading & setting"
 cd ~/
