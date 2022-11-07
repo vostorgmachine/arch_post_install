@@ -67,6 +67,7 @@ PKGS=(
 	'lazygit'
 	'ipython'
 	'tree'
+	'unrar'
 )
 
 for PKG in "${PKGS[@]}"; do
