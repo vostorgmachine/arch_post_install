@@ -68,6 +68,7 @@ PKGS=(
 	'ipython'
 	'tree'
 	'unrar'
+	'tldr' # man-command alternative
 )
 
 for PKG in "${PKGS[@]}"; do
