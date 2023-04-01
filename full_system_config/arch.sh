@@ -41,6 +41,7 @@ PKGS=(
 	'cmatrix'
 	'bat'
 	'exa'
+	'openssh'
 	'lolcat'
 	'figlet'
 	'neofetch'
