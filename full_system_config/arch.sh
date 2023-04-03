@@ -40,6 +40,7 @@ PKGS=(
 	'bashtop'
 	'cmatrix'
 	'bat'
+ 'udiskie'
 	'exa'
 	'openssh'
 	'lolcat'
