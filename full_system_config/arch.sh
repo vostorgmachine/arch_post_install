@@ -36,6 +36,7 @@ PKGS=(
 
 	# other
 	'w3m' # allow to draw pictures in ranger
+	'highlight' # allows highlighting in ranger (at least)
 	'gdu'
 	'bashtop'
 	'cmatrix'
