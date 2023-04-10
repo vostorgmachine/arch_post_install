@@ -13,6 +13,9 @@
 echo "mononokiNF font pack installing"
 sudo cp -r usr/ / 
 
+echo "tmux-ressurect plugin installing"
+git clone https://github.com/tmux-plugins/tmux-resurrect ~/clone/path
+
 echo "neovim plugin manager installing"
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
