@@ -95,13 +95,15 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 echo "AUR package manager installing"
 cd /opt
 sudo git clone https://aur.archlinux.org/yay-git.git
+# В случае со следующей строкой могут быть проблемы. Может помочь замена $USER:$USER
+# на текущее имя пользователя.
 sudo chown -R $USER:$USER ./yay-git
 cd yay-git
 makepkg -si
 cd ~/
 
 echo "AUR soft installation"
-yay -S zotero tty-clock kwin-bismuth starship
+yay -S zotero tty-clock starship
 
 echo "config downloading & setting"
 cd ~/
